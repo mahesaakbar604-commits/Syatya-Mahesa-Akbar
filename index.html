@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Web - Nama Anda</title>
+
+<!-- HTML Favicon -->
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f464.png" type="image/png">
+
+<!-- HTML Font (Google Fonts) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- HTML CSS (file terpisah) -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <!-- HTML Picture -->
+  <img class="foto" src="WhatsApp Image 2026-09-28 at 14.30.43.jpeg" alt="Foto Profil">
+
+  <!-- HTML Heading 1 -->
+  <h1>Syatya Mahesa Akbar</h1>
+  <!-- HTML Heading 2 -->
+  <h2>NIM 102042500030 &middot; Fakultas Rekayasa industri &middot; Program Studi S1 Sistem Informasi</h2>
+
+  <div class="sosial">
+    <a href="https://www.instagram.com/maheessss_?stkn=b3NpOG5xYjdzcXd4&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.linkedin.com/in/syatya-mahesa-akbar-5636a7390?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HTML Heading 3 -->
+  <h3>Tentang Saya</h3>
+  <p>Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada teknologi, pengembangan sistem, dan pengolahan data. Saya senang mempelajari hal-hal baru terutama yang berhubungan dengan teknologi informasi dan pengembangan aplikasi.</p>
+
+  <!-- HTML Heading 4 -->
+  <h4>Data Diri</h4>
+  <table>
+    <tr><th>Nama Lengkap</th><td>Syatya Mahesa Akbar</td></tr>
+    <tr><th>NIM</th><td>102042500030</td></tr>
+    <tr><th>Fakultas</th><td>Fakultas Rekayasa Industri</td></tr>
+    <tr><th>Program Studi</th><td>S1 Sistem Informasi</td></tr>
+  </table>
+
+  <!-- HTML Heading 5 -->
+  <h5>Waktu Kunjungan Anda</h5>
+  <!-- HTML Date and Time -->
+  <p>Halaman ini dibuka pada: <span id="jam"></span></p>
+
+  <!-- HTML Heading 6 -->
+  <h6>Terima kasih telah berkunjung.</h6>
+
+</main>
+
+<footer>
+  &copy; <span id="tahun"></span> Nama Masing-masing. Dipublikasikan melalui GitHub Pages.
+</footer>
+
+<script>
+  function updateClock(){
+    const now = new Date();
+    document.getElementById('jam').textContent = now.toLocaleDateString('id-ID', {
+      weekday:'long', year:'numeric', month:'long', day:'numeric'
+    }) + ' pukul ' + now.toLocaleTimeString('id-ID');
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+  document.getElementById('tahun').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

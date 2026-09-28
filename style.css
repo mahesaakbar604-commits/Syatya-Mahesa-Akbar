@@ -1,0 +1,138 @@
+:root{
+  --bg: #12181f;
+  --panel: #1b232c;
+  --line: #2b3540;
+  --text: #e8ecef;
+  --muted: #9aa7b2;
+  --accent: #d7a24a;
+}
+
+* { box-sizing: border-box; }
+
+body{
+  margin:0;
+  background: var(--bg); /* HTML Background */
+  color: var(--text);     /* HTML Color Text */
+  font-family: 'Source Serif 4', serif;
+  line-height:1.6;
+}
+
+header{
+  text-align:center;      /* HTML Align */
+  padding: 56px 20px 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+h1{
+  font-family:'Poppins', sans-serif;
+  font-size: 2.4rem;
+  margin: 0 0 6px;
+  letter-spacing: 0.5px;
+}
+
+h2{
+  font-family:'Poppins', sans-serif;
+  font-weight:600;
+  color: var(--accent);
+  font-size:1.1rem;
+  margin:0;
+}
+
+.foto{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid var(--accent);
+  margin-bottom:18px;
+}
+
+main{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+h3{
+  font-family:'Poppins', sans-serif;
+  font-size:1rem;
+  color: var(--accent);
+  border-bottom:1px solid var(--line);
+  padding-bottom:8px;
+  margin-top:44px;
+}
+
+h4{
+  font-family:'Poppins', sans-serif;
+  color:var(--accent);
+  margin-top:36px;
+  font-size:0.95rem;
+}
+
+h5{
+  font-family:'Poppins', sans-serif;
+  color:var(--accent);
+  margin-top:36px;
+  font-size:0.9rem;
+}
+
+h6{
+  font-family:'Poppins', sans-serif;
+  color:var(--muted);
+  margin-top:36px;
+  font-size:0.8rem;
+  font-weight:400;
+}
+
+/* HTML Table */
+table{
+  width:100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+table td, table th{
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align:left;
+}
+table th{
+  width: 40%;
+  color: var(--muted);
+  font-family:'Poppins', sans-serif;
+  font-weight:400;
+  font-size:0.9rem;
+}
+
+.sosial{
+  display:flex;
+  gap: 20px;
+  justify-content:center;
+  margin-top: 22px;
+}
+
+/* HTML Link */
+.sosial a{
+  color: var(--text);
+  text-decoration:none;
+  font-family:'Poppins', sans-serif;
+  font-size:0.95rem;
+  border:1px solid var(--line);
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: border-color .2s, color .2s;
+}
+.sosial a:hover{
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+footer{
+  text-align:center;
+  color: var(--muted);
+  font-family:'Poppins', sans-serif;
+  font-size:0.85rem;
+  padding: 24px 20px 40px;
+  border-top: 1px solid var(--line);
+}
+
+#jam{ color: var(--accent); }
